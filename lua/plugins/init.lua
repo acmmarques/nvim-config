@@ -128,8 +128,6 @@ return {
 		  -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 	  }
   },
-
-
   {	  "L3MON4D3/LuaSnip",
   -- follow latest release.
   version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
@@ -145,5 +143,7 @@ return {
 	  lazy = false,
 	  priority = 1000,
 	  opts = {},
-  }
+  },
+  {'kevinhwang91/nvim-ufo',
+    dependencies = 'kevinhwang91/promise-async'}
 }
