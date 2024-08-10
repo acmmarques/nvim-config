@@ -22,3 +22,5 @@ vim.api.nvim_set_keymap('v', 'y', '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'd', '"+d', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', 'd', '"+d', { noremap = true, silent = true })
 
+vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
+vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
