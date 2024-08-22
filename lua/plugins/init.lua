@@ -145,5 +145,10 @@ return {
 	  opts = {},
   },
   {'kevinhwang91/nvim-ufo',
-    dependencies = 'kevinhwang91/promise-async'}
+    dependencies = 'kevinhwang91/promise-async'},
+  {
+    "ThePrimeagen/vim-be-good",
+    cmd = "VimBeGood",
+  }
+
 }
