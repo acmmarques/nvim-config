@@ -149,6 +149,7 @@ return {
   {
     "ThePrimeagen/vim-be-good",
     cmd = "VimBeGood",
-  }
-
+  },
+  -- The self-proclaimed 'swiss army knife' for different things nvim related. Using it for the surrounding capabilities.
+	{ 'echasnovski/mini.nvim', version = '*' },
 }
