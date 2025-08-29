@@ -1,1 +1,1 @@
-This is my neovim very basic configuration.
+This is my very basic neovim configuration.
