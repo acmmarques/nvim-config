@@ -32,6 +32,19 @@ return {
     crust = "#232634",
   }
 
+
+local function os_icon()
+  if vim.fn.has("mac") == 1 or vim.loop.os_uname().sysname == "Darwin" then
+    return "" -- Apple logo icon (requires Nerd Font)
+  elseif vim.fn.has("unix") == 1 then
+    return "" -- Linux icon (requires Nerd Font)
+  elseif vim.fn.has("win32") == 1 then
+    return "" -- Windows icon (requires Nerd Font)
+  else
+    return "" -- Generic question mark icon
+  end
+end
+
   local function separator()
     return {
       function()
@@ -154,13 +167,8 @@ return {
     },
     lualine_x = {
       {
-        "fileformat",
+	os_icon,
         color = { fg = colors.yellow, bg = "none", gui = "bold" },
-        symbols = {
-          unix = "",
-          dos = "",
-          mac = "",
-        },
         padding = { left = 0, right = 0 },
       },
       {
