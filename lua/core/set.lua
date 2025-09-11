@@ -15,11 +15,17 @@ vim.opt.cindent=true
 
 --Adding a color on line 81 (to indicate lines that are too long) and changing
 --the color of that column
-vim.opt.colorcolumn='81'
 vim.api.nvim_set_hl(0, 'ColorColumn', { ctermbg = 'darkgrey', bg = '#3c3c3c' })
 
 --Setting the colorscheme
 vim.cmd.colorscheme("catppuccin")
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+vim.api.nvim_set_hl(0, "FloatBorder", { bg = "none" })
+vim.api.nvim_set_hl(0, "TelescopeTitle", { bg = "none" })
+vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NeoTreeFloatBorder", { bg = "none" })
 
 --Setting clipboard
 vim.opt.clipboard = "unnamedplus"
