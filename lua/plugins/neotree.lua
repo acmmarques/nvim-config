@@ -32,7 +32,7 @@ return {
     },
     window = {
       position = "left",
-      width = 30,
+      width = 40,
     },
     filesystem = {
       follow_current_file = {
