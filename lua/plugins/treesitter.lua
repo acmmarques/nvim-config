@@ -6,7 +6,7 @@ return {
   opts = {
     ensure_installed = {
       "javascript", "tsx", "typescript", "c", "lua", "vim", "vimdoc", "query",
-      "markdown", "markdown_inline", "html", "css"
+      "markdown", "markdown_inline", "html", "css", "ruby"
     },
 
     -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
