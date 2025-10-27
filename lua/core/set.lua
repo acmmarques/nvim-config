@@ -8,10 +8,17 @@ vim.opt.relativenumber=true
 --Adding scroll buffer
 vim.opt.scrolloff=8
 
+
+--Adding indent settings
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.opt.softtabstop = 2
+
 --Auto-indentation
-vim.opt.autoindent=true
-vim.opt.smartindent=true
-vim.opt.cindent=true
+--vim.opt.autoindent=true
+--vim.opt.smartindent=true
+--vim.opt.cindent=true
 
 --Adding a color on line 81 (to indicate lines that are too long) and changing
 --the color of that column
